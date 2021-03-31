@@ -81,12 +81,12 @@ const useStyles = makeStyles((theme) => ({
   },
 
   primaryIcon:{
-    marginLeft:"0.3rem",
+    marginLeft:"0.5rem",
     color:"#404040"
   },
 
   secondaryIcon:{
-    marginLeft:"1rem",
+    marginLeft:"1.1rem",
     color:"#A7A7A7"
   },
 
@@ -98,14 +98,14 @@ const useStyles = makeStyles((theme) => ({
 
   groupNormal:{
     background:"#EEEEEE",
-    padding:"1rem",
+    padding:"1rem 0 1rem 1rem",
   },
 
   groupBorder:{
     background:"#EEEEEE",
     borderTop: "1px solid #D6D6D6", 
     borderBottom: "1px solid #D6D6D6",
-    padding:"1rem",
+    padding:"1rem 0 1rem 1rem",
   },
   
   //<---- ROWS --->//

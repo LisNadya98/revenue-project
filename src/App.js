@@ -231,7 +231,7 @@ function App(props) {
                                         <RemoveCircleOutline className={`${classes.icon} ${classes.secondaryIcon}`} onClick={()=> {removeRule(val.id)}}/>
                                       </Typography>
                                     </Grid>
-                                    <Grid item xs={1} >
+                                    <Grid item xs={1}>
                                       <Typography className={classes.iconWrap}>
                                         {index === rule.length - 1 &&
                                           <AddCircleOutline className={`${classes.icon} ${classes.primaryIcon}`} onClick={()=> {addRule()}}/>
