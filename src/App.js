@@ -207,11 +207,11 @@ function App(props) {
                                             <Typography className={classes.small}>
                                               {
                                                 paramIndex !== val.parameter.length - 1 ?
-                                                  <Link className={classes.removeLink} onClick={() => {removeParameter(val.id, param.id)}}>
+                                                  <Link  className={`${classes.link} ${classes.removeLink}`} onClick={() => {removeParameter(val.id, param.id)}}>
                                                     remove rule
                                                   </Link>
                                                 :
-                                                  <Link className={classes.link} onClick={() => {addParameter(val.id)}}>
+                                                  <Link className={`${classes.link} ${classes.addLink}`} onClick={() => {addParameter(val.id)}}>
                                                     add rule
                                                   </Link>
                                               }
@@ -227,14 +227,14 @@ function App(props) {
                                     paramIndex === val.parameter.length - 1 &&
                                     <>
                                     <Grid item xs={1}>
-                                      <Typography className={classes.icon}>
-                                        <RemoveCircleOutline className={classes.secondaryIcon} onClick={()=> {removeRule(val.id)}}/>
+                                      <Typography className={classes.iconWrap}>
+                                        <RemoveCircleOutline className={`${classes.icon} ${classes.secondaryIcon}`} onClick={()=> {removeRule(val.id)}}/>
                                       </Typography>
                                     </Grid>
-                                    <Grid item xs={1}>
-                                      <Typography className={classes.icon}>
+                                    <Grid item xs={1} >
+                                      <Typography className={classes.iconWrap}>
                                         {index === rule.length - 1 &&
-                                          <AddCircleOutline className={classes.primaryIcon} onClick={()=> {addRule()}}/>
+                                          <AddCircleOutline className={`${classes.icon} ${classes.primaryIcon}`} onClick={()=> {addRule()}}/>
                                         }
                                       </Typography>
                                     </Grid>
@@ -275,10 +275,10 @@ function App(props) {
 
               {/* Footer */}
               <Grid item xs={12}  className={classes.footerMargin}>
-                <Button className={classes.primary}>
+                <Button className={`${classes.button} ${classes.primary}`}>
                   Confirm
                 </Button>
-                <Button className={classes.secondary}>
+                <Button className={`${classes.button} ${classes.secondary}`}>
                   Cancel
                 </Button>
               </Grid>

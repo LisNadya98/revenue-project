@@ -65,20 +65,28 @@ const useStyles = makeStyles((theme) => ({
   },
 
   //<---- ICONS --->//
-  icon:{
-    textAlign:"center",
+  iconWrap:{
     marginTop:"0.5rem"
   },
 
-  primaryIcon:{
+  icon:{
     margin:"0 0.5rem",
     fontSize:"20px",
+    opacity:"1",
+    transition:"0.5s",
+    cursor:"pointer",
+    '&:hover':{
+      opacity:"0.5"
+    }
+  },
+
+  primaryIcon:{
+    marginLeft:"0.3rem",
     color:"#404040"
   },
 
   secondaryIcon:{
-    margin:"0 0.5rem",
-    fontSize:"20px",
+    marginLeft:"1rem",
     color:"#A7A7A7"
   },
 
@@ -123,10 +131,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   //<---- BUTTONS --->//
-  primary:{
-    background:"#E68124",
+  button:{
     color:"#fff",
-    marginRight:"0.6rem",
     fontSize:"12px",
     transition:"0.5s",
     textTransform:"none",
@@ -137,27 +143,27 @@ const useStyles = makeStyles((theme) => ({
     }
   },
 
+  primary:{
+    background:"#E68124",
+    marginRight:"0.6rem",
+    
+  },
+
   secondary:{
     background:"#878787",
-    color:"#fff",
-    fontSize:"12px",
-    transition:"0.5s",
-    textTransform:"none",
-    padding:"0.5rem 1.6rem",
-    '&:hover':{
-      background:"#878787",
-      opacity:"0.5"
-    }
   },
 
   //<---- LINKS --->//
   link:{
     fontWeight:"bold",
+    cursor:"pointer",
+  },
+
+  addLink:{
     color:"#6EAFD9"
   },
 
   removeLink:{
-    fontWeight:"bold",
     color:"#C14E49"
   },
 
